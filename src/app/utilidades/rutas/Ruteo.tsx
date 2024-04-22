@@ -1,10 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 
 import { Inicio } from "../../componentes/contenedor/Inicio";
-import { BookCrear } from "../../componentes/Libros/BookCrear";
-import { BookListar } from "../../componentes/Libros/BookListar";
-import { BookAdmin } from "../../componentes/Libros/BookAdmin";
-import { BookActualizar } from "../../componentes/Libros/BookActualizar";
+import { CancionCrear } from "../../componentes/Canciones/CancionCrear";
+import { CancionListar } from "../../componentes/Canciones/CancionListar";
+import { CancionAdmin } from "../../componentes/Canciones/CancionAdmin";
 import { Acerca } from "../../componentes/otros/Acerca";
 import { NoEncontrado } from "../../componentes/contenedor/NoEncontrado";
 
@@ -13,11 +12,9 @@ export const Ruteo = () => {
     <Routes>
       <Route path="/" element={<Inicio />} />
 
-      <Route path="/bookcre" element={<BookCrear />} />
-      <Route path="/booklis" element={<BookListar />} />
-      <Route path="/bookadm" element={<BookAdmin />} />
-
-      <Route path="/bookactual/:codigo" element={<BookActualizar />} />
+      <Route path="/cancioncre" element={<CancionCrear />} />
+      <Route path="/cancionlis" element={<CancionListar />} />
+      <Route path="/cancionadm" element={<CancionAdmin />} />
 
       <Route path="/acer" element={<Acerca />} />
 

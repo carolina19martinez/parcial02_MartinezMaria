@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import miLogo from "../../../assets/img/icon2.png"
+import miLogo from "../../../assets/img/icons8-orquesta-48.png"
 
 export const Cabecera = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/"> 
           <img src={miLogo} alt="El Logo" />
@@ -27,13 +27,6 @@ export const Cabecera = () => {
                   Inicio
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="*">
-                  Bibliotecas 
-                </NavLink>
-              </li>
-              
-
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle show"
@@ -42,30 +35,29 @@ export const Cabecera = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="true"
                 >
-                  Libros 
+                  Canciones 
                 </a>
                 <ul className="dropdown-menu show" data-bs-popper="static">
                   <li>
-                    <NavLink className="dropdown-item" to="/bookcre">
-                      Redactar Libros
+                    <NavLink className="dropdown-item" to="/cancioncre">
+                      Crear canción
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="/booklis">
-                      Listar Libros
+                    <NavLink className="dropdown-item" to="/cancionlis">
+                      Listar Canciones
                     </NavLink>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="/bookadm">
-                      Administrar Libros
+                    <NavLink className="dropdown-item" to="/cancionadm">
+                      Administrar Canciones
                     </NavLink>
                   </li>
                 </ul>
               </li>
-
               <li className="nav-item">
                 <NavLink className="nav-link" to="/acer">
                   Acerca de...

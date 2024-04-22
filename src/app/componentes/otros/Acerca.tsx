@@ -1,7 +1,9 @@
 export const Acerca = () => {
   return (
     <>
-      gduhejdisko
+    <nav className= "permalink: /404.html">
+    </nav>
+  
       </>
     );
   };
